@@ -20,18 +20,11 @@ subprojects {
     }
 
     dependencies {
-        // Flink core
-        implementation("org.apache.flink:flink-streaming-java:1.17.1")
-        implementation("org.apache.flink:flink-connector-kafka:3.1.0-1.17")
-
-        // Jackson for JSON
+        implementation("org.apache.flink:flink-streaming-java:1.18.1")
+        implementation("org.apache.flink:flink-connector-kafka:3.2.0-1.18")
         implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
-
-        // Lombok
         compileOnly("org.projectlombok:lombok:1.18.30")
         annotationProcessor("org.projectlombok:lombok:1.18.30")
-
-        // Testing
         testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     }
 
