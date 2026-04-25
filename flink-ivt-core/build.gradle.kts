@@ -1,0 +1,1 @@
+description = "Flink IVT Core Library - Real-time fixation and saccade detection"
