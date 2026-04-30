@@ -32,10 +32,10 @@ import java.util.List;
  */
 public class FixationFunction extends KeyedProcessFunction<String, GazeEvent, FixationEvent> {
 
-    /** Window size in milliseconds — matches R server configuration. */
+    /** Window size in milliseconds. */
     private static final long WINDOW_MS = 2000L;
 
-    /** Step size in milliseconds — matches R server configuration. */
+    /** Step size in milliseconds. */
     private static final long STEP_MS = 1000L;
 
     /** How long to keep samples in the buffer beyond the current window. */
