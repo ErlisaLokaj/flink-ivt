@@ -8,7 +8,7 @@ Validated against the iMotions R reference implementation with 0.0ms start time 
 
 ## How it works
 
-Gaze samples stream in from any source. The pipeline buffers them using Flink stateful processing and fires an event-time timer every **1000ms**, slicing the last **2000ms** of samples into a complete window — exactly mirroring the R reference implementation.
+Gaze samples stream in from any source. The pipeline buffers them using Flink stateful processing and fires an event-time timer every **1000ms**, slicing the last **2000ms** of samples into a complete window.
 
 ```
 gaze samples
